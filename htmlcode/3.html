@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Css定位</title>
+	<!--@import url(wcss.css);/*通过@import引用CSS的样式内容*/-->
+	<!--<link rel="stylesheet" href="2.css" type="text/css"/>来调用外部的1.css文件-->
+	<link rel="stylesheet" href="1.css" type="text/css">
+	<script>
+		document.write("hell world");
+	</script>
+
+</head>
+<body>
+	<!--absolute绝对定位 是根据上一层的框架定位-->
+	<div style="font-size: 2em;">
+		<!--浮动定位 永远在一侧-->
+		<img src="241.png" style="float: right;" alt="">
+		<!--相对定位 是根据自身默认的位置调整-->
+		<p id="one">
+			第一段
+		</p>
+		<p class="two">
+			第二段
+		</p>
+
+		<p title="hello" >
+			第三段
+			<p>
+
+				<i>第<b>四</b></i><em>段</em>
+			</p>
+		</p>
+
+	</div>
+
+	<table style="border: 1px red solid;border-collapse: collapse;font-size: 5em;caption-side: bottom;table-layout: fixed;">
+		<caption>成绩</caption>
+		<tr>
+			<th style="vertical-align: top;text-align: right;width: 5em;height: 3em;padding: 0.5em">语文</th>
+			<th>数学</th>
+			<th>英语</th>
+		</tr>
+		<tr>
+			<td>88</td>
+			<td>99</td>
+			<td>77</td>
+		</tr>
+	</table>
+
+
+</body>
+</html>

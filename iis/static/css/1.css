@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors kakarot (kakarotsun@163.com)
+ * @date    2017-12-01 22:58:55
+ * @version $Id$
+ */
+	.header{
+		height:48px;
+		background-color: red;
+	}
+	.body{
+		background-color: #dddddd;
+
+	}
+	.body .menu{
+		background-color: green;
+		float:left;
+		width: 20%;
+
+	}
+	.body .content{
+		background-color: blue;
+		float: left;
+		width: 70%;
+	}

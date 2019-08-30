@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的第一个html</title>
+</head>
+<body>
+	<hgroup>
+		<h1 title="提示测试">标题测试1</h1>
+		<h2>标题测试2</h2>
+		<h3>标题测试3</h3>
+	</hgroup>
+	<p id="tiaozhuan">
+		a <sup>2</sup>+ b <sub>0</sub>
+		这里是分段<br>强制分行
+	</p>
+
+	<!--这是一段注释 html的一些属性-->
+
+	<p title="html一些属性">
+		<hr width="80%" align="left" size="6"> horizontal水平线 一般用css来做 这里用来演示 <br>
+		<abbr title="中国">测试PRC的缩写abbreviate</abbr><br>
+		a&lt;2 b&gt;3 小于大于<br>
+		&amp;&符号 &nbsp;nonbreakspace不可打断<br>
+
+	</p>
+
+	<!--这是一段注释 对文字的一些操作-->
+
+	<p>		
+		<small>变小</small><br>
+		<mark>高亮显示</mark><br>
+		<i>incline 斜线</i> <br>
+		<b>bold 加粗</b><br>
+		<ins>insert 插入有个线</ins><br>
+		<del>删除 中间有个线</del>  <br>
+		<bdo dir="rtl">bi-directional override 双向重载right to left 颠倒<bdi>bdi表示正常</bdi></bdo>
+
+	</p>
+
+	<!--这是一段注释 这里是一些特殊格式-->
+
+	<p>
+		<em>emphasize强调</em><br>
+		<strong>strong 着重</strong><br>
+		<dfn>definition 定义</dfn><br>
+		<code>code 代码</code><br>
+		<samp>sample 例子</samp><br>
+		<kbd>kbd 用户输入</kbd><br>
+		<var>variable 变量</var><br>
+		<cite>cite 引用</cite><br>
+
+		<address>
+			表示地址<br>
+			<blockquote>
+			阻塞引用表示大缩进
+			</blockquote><br>
+			<q>
+			quote小引用
+			</q><br>
+		</address>
+
+		<code>
+			<!--preformat 预格式化-->
+			<pre>
+				int main(){
+					print("hello world");
+					return 0;
+			}
+			</pre>
+		</code>
+
+	</p>
+
+
+    <!--这是一段注释 这里是列表的一些用法unorderedlist简写ul-->
+
+	<p>
+	无序表格unorderedlists
+		<ul>
+			<li>红茶</li>
+			<li>绿茶</li>
+			<li>咖啡</li>
+		</ul>
+	有序表格orderedlists	
+		<ol>
+			<li>鸡</li>
+			<li>鸭</li>
+			<li>鹅</li>
+		</ol>
+	自定义表格definition lists
+		<dl>
+			<dt>definition team 组</dt>
+			<dd>definition description 描述</dd>
+		</dl>
+	可以嵌套表格
+		<ul>
+			<li>蓝
+				<ol>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+				</ol>
+			</li>
+			<li>红</li>
+			<li>绿</li>
+		</ul>
+	</p>
+
+			    
+
+	<p>
+		<!--图片的一些写法-->
+		<img src="http://i.guancha.cn/news/2017/10/30/20171030091616475.jpg" alt="" width="50%" height="50%">
+		<br>
+		<!--图片分区域点击-->
+		<img src="http://i.guancha.cn/news/2017/10/30/20171030091616475.jpg" alt="" width=100 height=100 usemap="#map1" >
+		<map name="map1">
+			<area shape="rect" coords="0,0,50,50" href="https://www.baidu.com/" alt="" target="_blank">
+			<area shape="circle" coords="75,75,25" href="http://www.guancha.cn/" alt="" target="_blank">
+		</map>
+
+		<br>
+
+		<!--嵌入别的网页 比如弄个广告？-->
+		<iframe src="http://www.guancha.cn/" frameborder="10" width="80%" height="80%"></iframe>
+		<br>
+		<br>
+		<br>
+		<!--超链接 -->
+		<a href="http://www.guancha.cn/" >观察者网</a>
+		<br>
+		<a href="http://www.guancha.cn/" target="_blank">新页面跳转观察者网</a>
+		<br>
+		<a href="2.html" >本地目录文件</a>
+		<br>
+		<a href="#tiaozhuan">跳转到某个id的位置</a>
+		<br>
+	</p>
+
+	<!--表格 -->
+
+	<p>
+		<table border="3">
+			<caption>一个表格</caption>
+
+			<tr>
+				<th>表头1</th>
+				<th>表头2</th>
+				<th>表头3</th>
+			</tr>
+				<td>内容1</td>
+				<td>内容2</td>
+				<td>内容3</td>
+			<tr>
+				<td>行3</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td colspan="3">合并3列</td>
+			</tr>
+			<!--表头 表尾 用于长表格 翻页表头留在页面 -->	
+			<thead></thead>
+			<tbody></tbody>
+			<tfoot></tfoot>
+
+		</table>
+	</p>
+</body>
+</html>

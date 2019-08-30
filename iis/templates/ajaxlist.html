@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<div id="dict">Ajax 加载字典</div>
+<div id="dict_result" style="background-color: green;"></div>
+<br>
+<div id="list">Ajax 加载列表</div>
+<div id="list_result" style="background-color: red;"></div>
+ 
+<script src="http://apps.bdimg.com/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('#list').click(function(){
+          // 注意web：为指定命名空间
+          $.ajax({url:"{% url 'web:ajax-list' %}",success:function(ret){
+            // $.each() 方法遍历 // i 为索引，item为遍历值
+            var tmp=""
+            $.each(ret,function(i,item){
+              var str1='<button>'+item+'</button>'
+              tmp=tmp+str1              
+            })
+            $('#list_result').html(tmp)
+          }
+        })
+      })
+      // 字典 dict
+      $('#dict').click(function(){
+          $.getJSON("{% url 'web:ajax-dict' %}",function(ret){
+              //返回值 ret 在这里是一个字典
+            var tmp=""
+            $.each(ret,function(key,value){
+              var str1='<button>'+key+':'+value+'</button>'
+              tmp=tmp+str1              
+            })
+            $('#dict_result').html(tmp)
+          })
+      })
+    });
+</script>
+</body>
+</html>

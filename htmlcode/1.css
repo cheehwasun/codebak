@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors wb1768 (wb1768@163.com)
+ * @date    2017-10-31 07:05:36
+ * @version $Id$
+ */
+
+/*直接定位到所有的th 和td*/
+th,td {border: 1px green solid }
+/*.表示定位到class #表示定位到id*/
+*.two {font-size: 2em;color: red}
+*#one{font-weight: bold;font-size:2em;color: rgba(0,255,0,0.5)}
+/*>表示定位相邻的层 +表示定位到相同的层 空格表示下面的层，不用相邻*/
+
+p>em{font-size: 2em;color: blue}
+p b{color: green}
+/*[属性定位 表示有某种属性的]*/
+
+*[title]{color: rgba(0,0,0,0.8);}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <p>上传实例</p>
+    <form action="/it/uploadtest/" method="POST" enctype="multipart/form-data">
+    	{% csrf_token %}
+        <p><input type="file" name="f1" /></p>
+        <p><input type="text" name="hostname" /></p>
+        <input type="submit" value="提交" />
+    </form>
+</body>
+ 
+<!-- #enctype="multipart/form-data" 是指分片上传 -->
+</html>

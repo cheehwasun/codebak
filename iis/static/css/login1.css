@@ -1,0 +1,30 @@
+
+*, body { font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+body { margin-bottom: 30px; }
+h1 {
+	font-weight: 300;
+	font-size: 36px;
+	line-height: normal;
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.form-group:last-child { margin-bottom: 0; }
+
+.margin-bottom-15 {	margin-bottom: 15px; } /*下边框留的距离*/
+.form-group { margin-bottom: 20px;line-height: 34px; }
+
+.login-form-1 { max-width: 500px; } /*最大宽度*/
+
+.login-form-1 {
+	background-color: rgba(255,255,255,0.8);
+	border: 1px solid #dedede;
+	border-radius: 8px;          /*框体圆角化*/
+	margin: 0 auto;  /*上下边界为0，左右则根据宽度自适应相同值（即居中）*/                
+	padding: 20px; /*间距*/
+} 
+
+/*.login-btn1 {
+	float:right; /*右对齐*/
+/*}*/

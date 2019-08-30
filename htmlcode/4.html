@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript测试</title>
+	<style>
+		h1{color: red;font-size: 5em;text-align: center;}
+		li{font-size: 3em;border:2px green solid;border-collapse: collapse;margin: 0.1em;}
+	</style>
+	<script>
+		function g(){
+			wo.close();
+		}
+		function jump(){
+			//location="https://www.baidu.com";
+		}
+	</script>
+
+</head>
+<body onload="setInterval('jump()',2000)">
+	<script>
+		var hello="hello world";
+		document.write("<h1>hello</h1>");
+		var wo=open("3.html","3");
+		for (var x in document) {
+			document.write(x+"<br>");
+		}
+	</script>
+
+	<p style="margin-top: 2em;margin-bottom: 2em;">
+
+		<h1>创建对象</h1>
+		<ul>
+			<li>var o=new Object();</li>
+			<li>var circle={x:0,y:0,radio:1};</li>
+		</ul>
+
+		<h1>访问对象属性</h1>
+		<ul>
+			<li>var book=new Object();</li>
+			<li>book.title="12";</li>
+			<li>book.translate="1";</li>
+			<li>book.c1=new Object();</li>
+			<li>book.c1.title="23";</li>
+		</ul>
+		<h1>删除对象属性</h1>
+		
+		<ul>
+			<li>delete book.c1;</li>
+			<li>book.c1=null;</li>
+		</ul>
+		<h1>遍历所有属性</h1>
+		<ul>
+			<li>for(var x in o){alert(o[x]);}</li>
+		</ul>
+
+		<h1>构造方法</h1>
+		<ul>
+			<li>构造函数</li>
+			<li>this.x=1;....</li>
+		</ul>
+
+
+		
+	</p>
+</body>
+</html>
